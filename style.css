@@ -175,3 +175,35 @@ h1{
 .nav-links a:hover{
     color:white;
 }
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+    z-index:2000;
+}
+
+.lightbox.active{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:90vw;
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:16px;
+}
+
+.lightbox__close{
+    position:absolute;
+    top:25px;
+    right:35px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:48px;
+    cursor:pointer;
+}
