@@ -206,4 +206,55 @@ h1{
     color:white;
     font-size:48px;
     cursor:pointer;
+} .about{
+    max-width:900px;
+    margin:140px auto;
+    padding:0 30px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:clamp(2rem,4vw,3rem);
+    margin:20px 0;
+}
+
+.about-text{
+    font-size:1.1rem;
+    line-height:1.9;
+    color:#bdbdbd;
+    max-width:700px;
+    margin:0 auto;
+} .contact{
+    max-width:900px;
+    margin:140px auto;
+    padding:0 30px 160px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:clamp(2rem,4vw,3rem);
+    margin:20px 0;
+}
+
+.contact-text{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#bdbdbd;
+    max-width:650px;
+    margin:0 auto 35px;
+}
+
+.contact-button{
+    display:inline-block;
+    padding:14px 28px;
+    border:1px solid white;
+    border-radius:999px;
+    color:white;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+.contact-button:hover{
+    background:white;
+    color:black;
 }
