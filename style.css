@@ -236,7 +236,7 @@ h3{
 }
 
 .hero h1{
-    margin-bottom:26px;
+    margin-bottom:48px;
     font-size:clamp(78px,12vw,175px);
     font-weight:800;
     letter-spacing:-8px;
