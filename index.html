@@ -10,18 +10,35 @@
 
     <meta
         name="description"
-        content="Zyp_np — Roblox Studio builder specialized in realistic architecture, detailed environments and immersive experiences."
+        content="Zyp_np — Roblox environment artist and architectural builder specialized in realistic interiors, cities and immersive experiences."
     >
 
-    <title>Zyp_np | Roblox Studio Portfolio</title>
+    <meta name="theme-color" content="#050705">
+
+    <title>Zyp_np | Roblox Environment Artist</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/logos/logo.png"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <a href="#home" class="logo">Zyp_np</a>
+    <nav class="navbar" id="navbar">
+
+        <a href="#home" class="brand" aria-label="Zyp_np home">
+            <img
+                src="assets/logos/logo.png"
+                alt="Zyp_np logo"
+                class="brand__logo"
+            >
+
+            <span class="brand__name">Zyp_np</span>
+        </a>
 
         <div class="nav-links">
             <a href="#home">Home</a>
@@ -29,25 +46,37 @@
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
+
     </nav>
 
     <main id="home" class="hero">
-        <div class="hero__content reveal">
+
+        <div class="hero__background" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content">
 
             <p class="hero__eyebrow">
-                Roblox Studio Builder
+                Roblox Environment Artist
             </p>
 
             <h1>Zyp_np</h1>
 
             <p class="hero__description">
-                High-quality realistic builds, detailed environments
-                and immersive architecture.
+                Realistic architecture, detailed interiors and immersive
+                environments built inside Roblox Studio.
             </p>
 
+            <div class="hero__specialties">
+                <span>Architecture</span>
+                <span>Interiors</span>
+                <span>Cities</span>
+            </div>
+
             <div class="hero__actions">
+
                 <a href="#projects" class="hero__button">
-                    Explore projects
+                    View portfolio
                 </a>
 
                 <a
@@ -56,9 +85,20 @@
                 >
                     Start a project
                 </a>
+
             </div>
 
         </div>
+
+        <a
+            href="#projects"
+            class="hero__scroll"
+            aria-label="Scroll to projects"
+        >
+            <span>Scroll</span>
+            <span class="hero__scroll-line"></span>
+        </a>
+
     </main>
 
     <section class="stats reveal" aria-label="Portfolio statistics">
@@ -83,16 +123,24 @@
     <section id="projects" class="projects">
 
         <div class="section-heading reveal">
+
             <p class="section-label">
                 Selected Projects · 2026
             </p>
 
             <h2>Featured Work</h2>
+
+            <p class="section-description">
+                A selection of architecture, interiors and environments
+                created for immersive Roblox experiences.
+            </p>
+
         </div>
 
         <div class="gallery">
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-01.png"
                     alt="Modern apartment built in Roblox Studio"
@@ -100,15 +148,23 @@
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Interior</span>
+
+                    <span class="project-category">
+                        Interior
+                    </span>
+
                     <h3>Modern Apartment</h3>
+
                     <p>
                         Realistic architecture with premium interior design.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-02.png"
                     alt="Urban residence built in Roblox Studio"
@@ -116,15 +172,23 @@
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Architecture</span>
+
+                    <span class="project-category">
+                        Architecture
+                    </span>
+
                     <h3>Urban Residence</h3>
+
                     <p>
                         Contemporary exterior design with detailed materials.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-03.png"
                     alt="Residential environment built in Roblox Studio"
@@ -132,219 +196,284 @@
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Environment</span>
+
+                    <span class="project-category">
+                        Environment
+                    </span>
+
                     <h3>Residential Environment</h3>
+
                     <p>
                         Immersive surroundings created for realistic gameplay.
                     </p>
-                </div>
-            </article>
 
-            <article class="project-card reveal">
-                <img
-                    src="assets/images/project-04.png"
-                    alt="Modern architecture built in Roblox Studio"
-                    loading="lazy"
-                >
-
-                <div class="project-info">
-                    <span class="project-category">Building</span>
-                    <h3>Modern Architecture</h3>
-                    <p>
-                        Clean structure, realistic proportions and refined details.
-                    </p>
                 </div>
+
             </article>
                         <article class="project-card reveal">
+
+                <img
+                    src="assets/images/project-04.png"
+                    alt="Luxury living room built in Roblox Studio"
+                    loading="lazy"
+                >
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        Interior
+                    </span>
+
+                    <h3>Luxury Living Room</h3>
+
+                    <p>
+                        Warm lighting, premium furniture and realistic proportions.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-05.png"
-                    alt="Roblox Studio city development"
+                    alt="Modern kitchen built in Roblox Studio"
                     loading="lazy"
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Urban Design</span>
-                    <h3>City Development</h3>
+
+                    <span class="project-category">
+                        Interior
+                    </span>
+
+                    <h3>Modern Kitchen</h3>
+
                     <p>
-                        Large-scale urban design built for immersive experiences.
+                        Functional layout with realistic materials and lighting.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-06.png"
-                    alt="Premium Roblox Studio interior"
+                    alt="City street built in Roblox Studio"
                     loading="lazy"
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Interior</span>
-                    <h3>Premium Interior</h3>
+
+                    <span class="project-category">
+                        City
+                    </span>
+
+                    <h3>Urban Street</h3>
+
                     <p>
-                        Detailed interior composition with realistic lighting.
+                        Large scale city environment focused on immersion.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-07.png"
-                    alt="Roblox Studio environment design"
+                    alt="Office interior built in Roblox Studio"
                     loading="lazy"
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Environment</span>
-                    <h3>Environment Design</h3>
+
+                    <span class="project-category">
+                        Workspace
+                    </span>
+
+                    <h3>Office Interior</h3>
+
                     <p>
-                        Atmospheric scenery designed with strong visual identity.
+                        Professional office designed with modern architecture.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-08.png"
-                    alt="Roblox Studio architectural concept"
+                    alt="Luxury bedroom built in Roblox Studio"
                     loading="lazy"
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Concept</span>
-                    <h3>Architectural Concept</h3>
+
+                    <span class="project-category">
+                        Interior
+                    </span>
+
+                    <h3>Luxury Bedroom</h3>
+
                     <p>
-                        Detailed Roblox construction focused on realism.
+                        Comfortable and elegant interior with realistic ambience.
                     </p>
+
                 </div>
+
             </article>
 
             <article class="project-card reveal">
+
                 <img
                     src="assets/images/project-09.png"
-                    alt="Immersive map built in Roblox Studio"
+                    alt="Architectural visualization built in Roblox Studio"
                     loading="lazy"
                 >
 
                 <div class="project-info">
-                    <span class="project-category">Map Design</span>
-                    <h3>Immersive Map</h3>
+
+                    <span class="project-category">
+                        Visualization
+                    </span>
+
+                    <h3>Architectural Visualization</h3>
+
                     <p>
-                        Optimized environment created for exploration and gameplay.
+                        Detailed showcase focused on realism and presentation.
                     </p>
+
                 </div>
+
             </article>
 
         </div>
+
     </section>
 
     <section id="about" class="about reveal">
 
-        <p class="section-label">About Me</p>
+        <p class="section-label">
+            About
+        </p>
 
         <h2>
-            Building immersive Roblox experiences.
+            Building immersive Roblox environments.
         </h2>
 
         <p class="about-text">
-            I specialize in realistic architecture, modern interiors
-            and cinematic environments built entirely inside Roblox Studio.
-            Every project is designed with attention to detail, optimized
-            performance and professional presentation.
+            I'm a Roblox builder specialized in realistic architecture,
+            interiors and immersive environments. My goal is to create spaces
+            that feel believable while remaining optimized for gameplay and
+            performance.
         </p>
 
         <div class="services">
+
             <span>Architecture</span>
-            <span>Interior Design</span>
             <span>Environment Design</span>
-            <span>Map Building</span>
+            <span>Interior Design</span>
+            <span>Lighting</span>
+            <span>Optimization</span>
+
         </div>
 
     </section>
 
     <section id="contact" class="contact reveal">
 
-        <p class="section-label">Contact</p>
+        <p class="section-label">
+            Contact
+        </p>
 
-        <h2>Let’s build something great.</h2>
+        <h2>
+            Let's build something together.
+        </h2>
 
         <p class="contact-text">
-            Available for Roblox Studio commissions,
-            realistic builds and custom environments.
+            Available for commissions, game development and custom Roblox
+            building projects.
         </p>
 
         <a
-            href="mailto:arcanis848@gmail.com"
             class="contact-button"
+            href="mailto:TUEMAILAQUI"
         >
-            Contact me
+            Contact Me
         </a>
 
-        <div
-            class="social-links"
-            style="
-                grid-template-columns:repeat(3,minmax(0,1fr));
-                max-width:760px;
-                margin-left:auto;
-                margin-right:auto;
-            "
-        >
-
-            <a
-                href="https://www.roblox.com/es/users/2330611851/profile"
+        <div class="social-links">
+                        <a
                 class="social-link"
+                href="https://www.roblox.com/es/users/2330611851/profile"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Roblox profile"
             >
                 <svg
-                    width="25"
-                    height="25"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
                     aria-hidden="true"
                 >
-                    <path d="M5.164 0 0 18.836 18.836 24 24 5.164 5.164 0Zm8.747 14.728-4.64-1.273 1.273-4.64 4.64 1.273-1.273 4.64Z"/>
+                    <path
+                        fill="currentColor"
+                        d="M5.2 2.6 2.6 18.8l16.2 2.6 2.6-16.2L5.2 2.6Zm8.6 12.1-4.5-.7.7-4.5 4.5.7-.7 4.5Z"
+                    />
                 </svg>
 
                 <span>Roblox</span>
             </a>
 
-            <div
+            <a
                 class="social-link"
-                aria-label="Discord username Zyp_np"
+                href="https://github.com/Zypnp"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <svg
-                    width="25"
-                    height="25"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
                     aria-hidden="true"
                 >
-                    <path d="M20.317 4.369A19.791 19.791 0 0 0 15.885 3a13.88 13.88 0 0 0-.566 1.162 18.27 18.27 0 0 0-5.638 0A12.64 12.64 0 0 0 9.115 3a19.736 19.736 0 0 0-4.433 1.369C1.88 8.573 1.12 12.67 1.5 16.71a17.82 17.82 0 0 0 5.438 2.746 13.9 13.9 0 0 0 1.308-1.698 11.55 11.55 0 0 1-2.057-.99c.173-.127.342-.26.506-.395 3.964 1.84 8.267 1.84 12.184 0 .165.135.334.268.507.395-.655.387-1.345.72-2.058.99.378.598.816 1.166 1.309 1.698a17.74 17.74 0 0 0 5.437-2.746c.446-4.685-.762-8.746-3.757-12.341ZM8.02 14.24c-1.19 0-2.17-1.099-2.17-2.45s.96-2.451 2.17-2.451c1.22 0 2.19 1.11 2.17 2.451 0 1.351-.96 2.45-2.17 2.45Zm7.974 0c-1.19 0-2.17-1.099-2.17-2.45s.96-2.451 2.17-2.451c1.22 0 2.19 1.11 2.17 2.451 0 1.351-.95 2.45-2.17 2.45Z"/>
+                    <path
+                        fill="currentColor"
+                        d="M12 .8a11.4 11.4 0 0 0-3.6 22.2c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C17.4 5.1 18.5 5.4 18.5 5.4c.6 1.6.2 2.9.1 3.2.8.9 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.4 11.4 0 0 0 12 .8Z"
+                    />
+                </svg>
+
+                <span>GitHub</span>
+            </a>
+
+            <div class="social-link social-link--static">
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M19.5 5.3A17.5 17.5 0 0 0 15.2 4l-.5 1a16 16 0 0 0-5.4 0l-.5-1a17.6 17.6 0 0 0-4.3 1.3C1.8 9.4 1 13.4 1.4 17.3a17.3 17.3 0 0 0 5.2 2.6l1.3-1.8c-.7-.3-1.4-.7-2-1.2l.5-.4a12.3 12.3 0 0 0 11.2 0l.5.4c-.6.5-1.3.9-2 1.2l1.3 1.8a17.3 17.3 0 0 0 5.2-2.6c.5-4.6-.8-8.5-3.1-12ZM8.6 14.8c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Zm6.8 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2Z"
+                    />
                 </svg>
 
                 <span>Zyp_np</span>
             </div>
 
             <a
-                href="mailto:arcanis848@gmail.com"
                 class="social-link"
-                aria-label="Email"
+                href="mailto:arcanis848@gmail.com"
             >
                 <svg
-                    width="25"
-                    height="25"
                     viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
                     aria-hidden="true"
                 >
-                    <rect x="3" y="5" width="18" height="14" rx="2"/>
-                    <path d="m3 7 9 6 9-6"/>
+                    <path
+                        fill="currentColor"
+                        d="M3 4.5h18a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2Zm9 8.2 8.2-5.4H3.8l8.2 5.4Zm0 2.4L3 9.2v8.3h18V9.2l-9 5.9Z"
+                    />
                 </svg>
 
                 <span>Email</span>
@@ -353,18 +482,29 @@
         </div>
 
     </section>
-        <footer class="footer">
 
-        <a href="#home" class="footer-logo">
-            Zyp_np
+    <footer class="footer">
+
+        <a
+            href="#home"
+            class="footer-brand"
+            aria-label="Back to top"
+        >
+            <img
+                src="assets/logos/logo.png"
+                alt=""
+                class="footer-brand__logo"
+            >
+
+            <span>Zyp_np</span>
         </a>
 
         <p>
-            Roblox Studio Builder · © 2026
+            Roblox Environment Artist
         </p>
 
         <a href="#home" class="back-to-top">
-            Back to top ↑
+            Back to top
         </a>
 
     </footer>
@@ -373,21 +513,26 @@
         class="lightbox"
         id="lightbox"
         aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Project image preview"
     >
+
         <button
             class="lightbox__close"
             id="lightboxClose"
             type="button"
-            aria-label="Close image"
+            aria-label="Close image preview"
         >
-            ×
+            &times;
         </button>
 
         <img
             id="lightboxImage"
             src=""
-            alt="Expanded project"
+            alt=""
         >
+
     </div>
 
     <script src="script.js"></script>

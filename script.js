@@ -1,12 +1,34 @@
+const navbar = document.getElementById("navbar");
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxClose = document.getElementById("lightboxClose");
 
-const projectImages = document.querySelectorAll(".project-card img");
+const projectCards = document.querySelectorAll(".project-card");
 const revealElements = document.querySelectorAll(".reveal");
 
-projectImages.forEach((image) => {
-    image.addEventListener("click", () => {
+function updateNavbar() {
+    if (window.scrollY > 40) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+}
+
+updateNavbar();
+
+window.addEventListener("scroll", updateNavbar, {
+    passive: true
+});
+
+projectCards.forEach((card) => {
+    const image = card.querySelector("img");
+
+    if (!image) {
+        return;
+    }
+
+    card.addEventListener("click", () => {
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt;
 
@@ -22,6 +44,8 @@ function closeLightbox() {
     lightbox.setAttribute("aria-hidden", "true");
 
     lightboxImage.src = "";
+    lightboxImage.alt = "";
+
     document.body.style.overflow = "";
 }
 
@@ -34,25 +58,37 @@ lightbox.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && lightbox.classList.contains("active")) {
+    if (
+        event.key === "Escape" &&
+        lightbox.classList.contains("active")
+    ) {
         closeLightbox();
     }
 });
 
-const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
+if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
                 entry.target.classList.add("visible");
                 observer.unobserve(entry.target);
-            }
-        });
-    },
-    {
-        threshold: 0.15
-    }
-);
+            });
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
 
-revealElements.forEach((element) => {
-    revealObserver.observe(element);
-});
+    revealElements.forEach((element) => {
+        revealObserver.observe(element);
+    });
+} else {
+    revealElements.forEach((element) => {
+        element.classList.add("visible");
+    });
+}
